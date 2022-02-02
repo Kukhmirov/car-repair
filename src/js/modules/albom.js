@@ -1,4 +1,4 @@
-function albom (tabsItems, tabContentItems, tabsParentItems, data){
+function albom (tabsItems, tabContentItems, tabsParentItems){
 
     const tabs = document.querySelectorAll(tabsItems),
           tabsContent = document.querySelectorAll(tabContentItems),
@@ -9,7 +9,6 @@ function albom (tabsItems, tabContentItems, tabsParentItems, data){
         tabsContent.forEach(item => {
             item.classList.add('hidden');
             item.classList.remove('show', 'fade');
-            console.log(item);
         });
         tabs.forEach(item => {
             item.classList.remove('active');

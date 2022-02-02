@@ -98,22 +98,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_videoBtn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/videoBtn */ "./src/js/modules/videoBtn.js");
 /* harmony import */ var _modules_counter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/counter */ "./src/js/modules/counter.js");
 /* harmony import */ var _modules_albom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/albom */ "./src/js/modules/albom.js");
+/* harmony import */ var _modules_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/form */ "./src/js/modules/form.js");
+
 
 
 
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
-  const data = [{
-    item: true
-  }, {
-    item: false
-  }, {
-    item: true
-  }];
   Object(_modules_videoBtn__WEBPACK_IMPORTED_MODULE_0__["default"])('.video-arrow', '.video-btn');
   Object(_modules_counter__WEBPACK_IMPORTED_MODULE_1__["default"])();
-  Object(_modules_albom__WEBPACK_IMPORTED_MODULE_2__["default"])('.tabheader-item', '.foto', '.tabheader-items', data);
+  Object(_modules_albom__WEBPACK_IMPORTED_MODULE_2__["default"])('.tabheader-item', '.foto', '.tabheader-items');
+  Object(_modules_form__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 
 /***/ }),
@@ -127,7 +123,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function albom(tabsItems, tabContentItems, tabsParentItems, data) {
+function albom(tabsItems, tabContentItems, tabsParentItems) {
   const tabs = document.querySelectorAll(tabsItems),
         tabsContent = document.querySelectorAll(tabContentItems),
         span = document.querySelectorAll('.tabs-active'),
@@ -137,7 +133,6 @@ function albom(tabsItems, tabContentItems, tabsParentItems, data) {
     tabsContent.forEach(item => {
       item.classList.add('hidden');
       item.classList.remove('show', 'fade');
-      console.log(item);
     });
     tabs.forEach(item => {
       item.classList.remove('active');
@@ -223,6 +218,56 @@ function counter() {
 
 ;
 /* harmony default export */ __webpack_exports__["default"] = (counter);
+
+/***/ }),
+
+/***/ "./src/js/modules/form.js":
+/*!********************************!*\
+  !*** ./src/js/modules/form.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function form() {
+  const forms = document.getElementById('form');
+  const message = {
+    loading: "Loading",
+    success: "Thank you, our specialist will contact you shortly",
+    error: "upss, something went wrong"
+  };
+  forms.addEventListener('submit', event => {
+    event.preventDefault();
+    const formData = new FormData(forms);
+    const object = {};
+    formData.forEach(function (value, key) {
+      object[key] = value;
+    });
+    let statusMessage = document.createElement('div');
+    statusMessage.classList.add('status');
+    forms.appendChild(statusMessage);
+    fetch("assets/server.php", {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(object)
+    }).then(data => {
+      data.text();
+      statusMessage.innerHTML = message.success;
+    }).then(data => {
+      console.log(data.text());
+    }).catch(() => {
+      statusMessage.innerHTML = message.error;
+    }).finally(() => {
+      forms.reset();
+    });
+  });
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (form);
 
 /***/ }),
 

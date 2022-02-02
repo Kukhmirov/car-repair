@@ -1,4 +1,3 @@
-
 function modal () {
     const modal = document.createElement("div"),
           parent = document.querySelector('.video');

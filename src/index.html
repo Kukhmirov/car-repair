@@ -290,13 +290,13 @@
                     <div class="title title--form">
                         <h2>Make an appointment</h2>
                     </div>
-                    <form action="#">
+                    <form action="#" class="forms" id="form">
                         <div class="form-row">
-                            <input type="text" name="name" placeholder="Name" required>
-                            <input type="email" name="mail" placeholder="Email" required>
+                            <input type="text" name="name" required placeholder="Name" required>
+                            <input type="email" name="mail" required placeholder="Email" required>
                         </div>
                         <div class="form-row">
-                            <input type="number" name="phone" placeholder="Phone number">
+                            <input type="number" name="phone" required placeholder="Phone number">
                             <select name="view" id="view_type" placeholder="ddd">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -308,7 +308,7 @@
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                     </form>
                     <div class="btn-box">
-                        <button class="button button--form">
+                        <button type="submit" form="form" name="send_other" class="button button--form">
                             <div class="arrow"></div>
                             <p>Make an Appointment<img src="./assets/icon/arrow_forward_24px.svg" alt="arow"></p>
                         </button>
