@@ -85,11 +85,15 @@
         right: 30px;
         width: 50px;
         height: 30px;
-        background: #21C613;
+        background: red;
         color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
+        &--green
+        {
+            background: #21C613;
+        }
     }
     .back-img
     {
