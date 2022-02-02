@@ -1,0 +1,91 @@
+.video
+{
+    margin-top: 100px;
+    padding-top: 140px;
+    height: 500px;
+    background: url(../../assets/image/video-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrapper
+    {
+        position: relative;
+        margin-left: auto;
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+    }
+    .videobtn
+    {
+        margin-top: 5px;
+        position: relative;
+        width: 140px;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .video-btn:nth-child(1)
+        {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            z-index: 1;
+            opacity: 0.16;
+            transition: .5s all;
+            &:hover
+            {
+                background:#bd8080;
+            }
+        }
+        .video-btn:nth-child(2)
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 112px;
+            height: 112px;
+            border-radius: 100%;
+            background: #FFFFFF;
+            opacity: 0.2;
+            z-index: 2;
+            transition: .3s all;
+            &:hover
+            {
+                background:#d1b2b2;
+            }
+        }
+        .video-btn:nth-child(3)
+        {
+            position: relative;
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            z-index: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s all;
+            &:hover
+            {
+                background:#fff0f0;
+                transition: .3s all;
+            }
+            .video-arrow
+            {
+                width: 22px;
+                height: 28px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                clip-path: polygon(100% 50%, 0 0, 0 100%);
+                background: #C40B0B;
+                z-index: 4;
+            }
+        }
+    }
+    
+}

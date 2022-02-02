@@ -1,0 +1,110 @@
+.form
+{
+    position: relative;
+    padding: 130px 0 210px 0;
+    background: #02133C;
+    .back-img:nth-child(1)
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+    .back-img:nth-child(2)
+    {
+        position: absolute;
+        left: 0;
+        bottom: 78px;
+        transform:matrix(1.00,-0.00,-0.00,-1.00,0,0);
+        -ms-transform:matrix(1.00,-0.00,-0.00,-1.00,0,0);
+        -webkit-transform:matrix(1.00,-0.00,-0.00,-1.00,0,0);
+        z-index: 0;
+    }
+    &__wrapper
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__contact
+    {
+        position: relative;
+        padding: 76px 57px;
+        z-index: 2;
+        background: #ffff;
+        width: 585px;
+        display: flex;
+        flex-direction: column;
+        form
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .form-row
+            {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 22px;
+            }
+            input
+            {
+                width: 224px;
+                height: 48px;
+                background: #F5F5F5;
+                padding-left: 22px;
+                font-size: 16px;
+                outline: 0;
+                border: none;
+            }
+            select
+            {
+                width: 224px;
+                height: 48px;
+                background: #F5F5F5;
+                text-align: center;
+                font-size: 16px;
+                outline: 0;
+                border: none;
+            }
+            textarea
+            {
+                width: 100%;
+                background: #F5F5F5;
+                padding: 17px 0 0 22px;
+                font-size: 16px;
+                outline: 0;
+                border: none;
+                resize: none;
+            }
+        }
+    }
+    .btn-box
+    {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__counter
+    {
+        width: 324px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .counter
+        {
+            margin: 46px 0;
+        }
+        span
+        {
+            font-weight: 900;
+            font-size: 96px;
+            line-height: 56px;
+            color: #C40B0B;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.overtitle
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 33px;
+    p
+    {
+        margin-left: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: #4B4B4B;
+    }
+    &--impact
+    {
+        p
+        {
+        color: #D5D5D5;
+        }
+    }
+}
+
+.title
+{
+    h2
+    {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #02133C;
+    }
+    &--about-us
+    {
+        width: 583px;
+        margin-bottom: 36px;
+    }
+    &--sentence
+    {
+        width: 583px;
+        margin-bottom: 72px;
+    }
+    &--card
+    {
+        font-weight: 900;
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    &--video
+    {
+        h2
+        {
+            width: 411px;
+            color: #FFFFFF;
+        }
+    }
+    &--form
+    {
+        width: 100%;
+        color: #000;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    &--counter
+    {
+        font-size: 26px;
+        line-height: 36px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &--albom
+    {
+        margin-bottom: 58px;
+    }
+    &--customers
+    {
+        width: 324px;
+    }
+    &--impact
+    {
+        h2
+        {
+            width: 411px;
+            color: #FFFFFF;
+        }
+    }
+    &--overfooter
+    {
+        h2
+        {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        color: black;
+        }
+    }
+}
+
+.subtitle
+{
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.description
+{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+    &--about-us
+    {
+        margin-bottom: 54px;
+    }
+    &--card-sentence
+    {
+        color: #4B4B4B;
+    }
+    &--card-customers
+    {
+        font-weight: normal;
+        width: 235px;
+        margin-bottom: 18px;
+    }
+    &--footer
+    {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+        color: #4B4B4B;
+    }
+}

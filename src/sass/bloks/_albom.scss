@@ -1,0 +1,130 @@
+.albom
+{
+    height: 860px;
+    position: relative;
+    &__wrapper
+    {
+        position: relative;
+        top: -80px;
+        height: 700px;
+        background: #fff;
+        padding: 100px 87px 0 87px;
+        margin-bottom: 240px;
+        z-index: 1;
+    }
+    &__container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__selector
+    {
+        width: 100%;
+        margin-bottom: 15px;
+        ul
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        li
+        {
+            position: relative;
+            list-style: none;
+            cursor: pointer;
+            .circle
+            {
+                position: absolute;
+                top: -3px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #D5D5D5;
+                &--green
+                {
+                    background: #21C613;
+                }
+            }
+        }
+    }
+    span
+    {
+        width: 100%;
+        height: 1px;
+        background: #D5D5D5;
+        margin-bottom: 50px;
+    }
+
+    .tabs-active
+    {
+        position: absolute;
+        bottom: -19px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+        width: 200px;
+        border: 4px solid #C40B0B;
+        animation-name: anim;
+        animation-duration: .5s;
+    }
+    &__foto
+    {
+        position: relative;
+        img
+        {
+            width: 846px;
+            height: 480px;
+            object-fit: cover;
+        }
+    }
+    .live
+    {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 50px;
+        height: 30px;
+        background: #21C613;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .back-img
+    {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+}
+
+.fade
+{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade 
+{
+    0%
+    {
+        opacity: 0.1;
+    }    
+    100%
+    {
+        opacity: 1;
+    }
+}
+@keyframes anim
+{
+    0%
+    {
+        width: 0;
+    }
+    100%
+    {
+        width: 200px;
+    }
+}

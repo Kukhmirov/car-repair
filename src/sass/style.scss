@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #F5F5F5;
+    font-family: Roboto;
+}
+
+.container
+{
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.show
+{
+    display: block;
+    transition: .5s all;
+}
+
+.hidden
+{
+    display: none;
+    transition: .5s all;
+}
+
+@import 'bloks/promo';
+@import 'bloks/header';
+@import 'bloks/button';
+@import 'bloks/title';
+@import 'bloks/about';
+@import 'bloks/sentence';
+@import 'bloks/video';
+@import 'bloks/card';
+@import 'bloks/service';
+@import 'bloks/form';
+@import 'bloks/albom';
+@import 'bloks/customers';
+@import 'bloks/impact';
+@import 'bloks/overfooter';
+@import 'bloks/footer';
+@import 'bloks/subfooter';
+@import 'bloks/modal';
