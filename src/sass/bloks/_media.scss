@@ -17,7 +17,7 @@
     }
     .promo
     {
-        background-position: center center;
+        background-position: right;
     }
     .about-us
     {
@@ -63,5 +63,299 @@
     .overfooter
     {
         width: 900px;
+    }
+}
+
+@media (max-width: 980px)
+{
+    .container
+    {
+        width: 90%;
+    }
+    .header-mb
+    {
+        display: flex;
+    }
+    .header
+    {
+        display: none;
+    }
+    .service
+    {
+        &__wrapper
+        {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+    }
+    .form
+    {
+        &__contact
+        {
+            padding: 25px 10px;
+        }
+        &__counter
+        {
+            width: 285px;
+        }
+    }
+    .albom
+    {
+        picture
+        {
+            img
+            {
+                width: 100%;
+            }
+        }
+    }
+    .customers
+    {
+        height: 100%;
+        &__wrapper
+        {
+            display: grid;
+            justify-content: inherit;
+        }
+        &__tittle
+        {
+            grid-column: 2 / 2;
+            grid-row: 1 / 2;
+        }
+    }
+    .card
+    {
+        &--customers
+        {
+            &:nth-child(2)
+            {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            &:nth-child(3)
+            {
+                grid-column: 1 / 2;
+                grid-row: 2 / 2;
+            }
+        }
+    }
+    .impact
+    {
+        &__card
+        {
+            align-items: center;
+        }
+    }
+    .item-card 
+    {
+        height: 100%;
+
+        img
+        {
+            width: 50px;
+        }
+        .count
+        {
+            font-size: 28px;
+        }
+    }
+    .overfooter
+    {
+        width: 830px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .promo
+    {
+        .info-wrapper
+        {
+            justify-content: space-evenly;
+        }
+        &__title
+        {
+            width: 100%;
+            text-align: center;
+            font-size: 42px;
+        }
+    }
+    .logo
+    {
+        img
+        {
+            width: 100%;
+        }
+    }
+    .button
+    {
+        width: 180px;
+        &--header
+        {
+            display: none;
+        }
+        &--promo
+        {
+            margin: 50px auto 0 auto;
+        }
+    }
+    .title
+    {
+        width: 100%;
+        text-align: center;
+        &--video
+        {
+            text-align: end;
+            h2
+            {
+                font-size: 25px;
+            }
+        }
+        &--impact
+        {
+            display: flex;
+            justify-content: center;
+        }
+        &--overfooter
+        {
+            h2
+            {
+                font-size: 20px;
+            }
+        }
+    }
+    .sentence
+    {
+        &__wrapper
+        {
+            flex-direction: column;
+            align-items: center
+        }
+        &__card
+        {
+            margin: 20px;
+        }
+    }
+    .video
+    {
+        &__wrapper
+        {
+            align-items: end;
+        }
+    }
+    .form
+    {
+        &__wrapper
+        {
+            flex-direction: column;
+        }
+        &__contact
+        {
+            order: 1;
+            margin-top: 30px;
+            .forms
+            {
+                .form-row
+                {
+                    input
+                    {
+                        width: 250px;
+                    }
+                    select
+                    {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+    .albom
+    {
+        &__wrapper
+        {
+            padding: 80px 20px;
+        }
+        .tabheader-item
+        {
+            .tabs-active
+            {
+                width: 110%;
+                bottom: -18px;
+                border: 3px solid #c40b0b;
+            }
+        }
+    }
+    .customers
+    {
+        &__wrapper
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .impact
+    {
+        &__title
+        {
+            .car-img
+            {
+                display: none;
+            }
+        }
+        &__card
+        {
+            .item-card
+            {
+                flex-direction: column;
+                justify-content: initial;
+                height: 150px;
+                img
+                {
+                    height: 50px;
+                }
+                &__info
+                {
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .overfooter
+    {
+        width: 90%;
+    }
+    .footer
+    {
+        &__wrapper
+        {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__contact
+        {
+            height: initial;
+            width: initial;
+            order: 2;
+            margin: 40px;
+        }
+        &__title
+        {
+            text-align: center;
+        }
+        &__items
+        {
+            width: 100%;
+            flex-direction: row;
+            height: initial;
+            flex-wrap: wrap;
+            .contact-info
+            {
+                width: 40%;
+                margin: 10px;
+            }
+        }
     }
 }

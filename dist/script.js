@@ -99,6 +99,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_counter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/counter */ "./src/js/modules/counter.js");
 /* harmony import */ var _modules_albom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/albom */ "./src/js/modules/albom.js");
 /* harmony import */ var _modules_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/form */ "./src/js/modules/form.js");
+/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/header */ "./src/js/modules/header.js");
+
 
 
 
@@ -110,6 +112,7 @@ window.addEventListener("DOMContentLoaded", () => {
   Object(_modules_counter__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_modules_albom__WEBPACK_IMPORTED_MODULE_2__["default"])('.tabheader-item', '.foto', '.tabheader-items');
   Object(_modules_form__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  Object(_modules_header__WEBPACK_IMPORTED_MODULE_4__["default"])();
 });
 
 /***/ }),
@@ -268,6 +271,29 @@ function form() {
 
 ;
 /* harmony default export */ __webpack_exports__["default"] = (form);
+
+/***/ }),
+
+/***/ "./src/js/modules/header.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/header.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function header() {
+  const menuToggle = document.querySelector('.hamburger-menu'),
+        menuOpen = document.querySelector('.menu-open');
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('menu-active');
+    menuOpen.classList.toggle('menu-show');
+  });
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (header);
 
 /***/ }),
 

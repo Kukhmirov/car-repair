@@ -132,3 +132,18 @@
         width: 200px;
     }
 }
+
+@media (max-width: 900px)
+{
+    @keyframes anim
+{
+    0%
+    {
+        width: 0;
+    }
+    100%
+    {
+        width: 110%;
+    }
+}
+}
