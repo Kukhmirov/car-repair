@@ -2,8 +2,8 @@
 Лендинг автосервиса
 
 Используемый стек: <br/>
-SCSS
-Java
-БЭМ
+SCSS<br/>
+Java<br/>
+БЭМ<br/>
 
 [visual](https://kukhmirov.github.io/car-repair/)
