@@ -1,4 +1,9 @@
 # car-repair
-сайт пока что только для web версии без адаптации под мобильники
+Лендинг автосервиса
+
+Используемый стек: <br/>
+SCSS<br/>
+Java<br/>
+БЭМ<br/>
 
 [visual](https://kukhmirov.github.io/car-repair/)
