@@ -108,7 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
-  Object(_modules_videoBtn__WEBPACK_IMPORTED_MODULE_0__["default"])('.video-arrow', '.video-btn');
+  Object(_modules_videoBtn__WEBPACK_IMPORTED_MODULE_0__["default"])('#video-arrow', '.video-btn');
   Object(_modules_counter__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_modules_albom__WEBPACK_IMPORTED_MODULE_2__["default"])('.tabheader-item', '.foto', '.tabheader-items');
   Object(_modules_form__WEBPACK_IMPORTED_MODULE_3__["default"])();
@@ -215,7 +215,11 @@ function counter() {
     let time = setInterval(() => {
       count++;
       counter.innerHTML = `${count}`;
-    }, 2000);
+
+      if (count >= 1787) {
+        clearInterval(time);
+      }
+    }, 30);
   };
 }
 
@@ -284,11 +288,9 @@ function form() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 function header() {
-  const menuToggle = document.querySelector('.hamburger-menu'),
-        menuOpen = document.querySelector('.menu-open');
+  const menuToggle = document.querySelector('.hamburger-menu');
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('menu-active');
-    menuOpen.classList.toggle('menu-show');
   });
 }
 

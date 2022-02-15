@@ -1,10 +1,8 @@
 function header (){
-    const menuToggle = document.querySelector('.hamburger-menu'),
-          menuOpen = document.querySelector('.menu-open');
+    const menuToggle = document.querySelector('.hamburger-menu');
 
     menuToggle.addEventListener('click', () => {
         menuToggle.classList.toggle('menu-active');
-        menuOpen.classList.toggle('menu-show');
     });
 };
 

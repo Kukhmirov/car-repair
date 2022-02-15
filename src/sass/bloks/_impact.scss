@@ -1,7 +1,7 @@
 .impact
 {
     position: relative;
-    height: 580px;
+    padding-bottom: 200px;
     padding-top: 100px;
     background: url(../../assets/image/impact-bg.png), #02133C;
     background-position: center;
@@ -19,7 +19,6 @@
     &__card
     {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
 }

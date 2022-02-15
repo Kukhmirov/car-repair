@@ -7,7 +7,7 @@ import header from "./modules/header";
 window.addEventListener("DOMContentLoaded", () => {
     "use strict";
 
-    videoBtn('.video-arrow', '.video-btn');
+    videoBtn('#video-arrow', '.video-btn');
     counter();
     albom('.tabheader-item', '.foto', '.tabheader-items');
     form();

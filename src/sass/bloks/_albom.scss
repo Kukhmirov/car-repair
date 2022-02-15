@@ -1,6 +1,6 @@
 .albom
 {
-    height: 860px;
+    padding-bottom: 150px;
     position: relative;
     &__wrapper
     {
@@ -9,7 +9,6 @@
         height: 700px;
         background: #fff;
         padding: 100px 87px 0 87px;
-        margin-bottom: 240px;
         z-index: 1;
     }
     &__container

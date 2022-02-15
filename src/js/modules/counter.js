@@ -25,7 +25,10 @@ function counter (){
         let time = setInterval(() => {
             count++;
             counter.innerHTML = `${count}`;
-        }, 2000);
+            if(count >= 1787){
+                clearInterval(time);
+            }
+        }, 30);
     };
 };
 

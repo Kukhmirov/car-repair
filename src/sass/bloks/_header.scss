@@ -100,12 +100,24 @@
             .search
             {
                 margin-right: 27px;
+                display: flex;
+                a
+                {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    img
+                    {
+                        width: 100%;
+                    }
+                }
             }
             .basket
             {
                 position: relative;
                 a
                 {
+                    display: flex;
                     span
                     {
                         width: 16px;

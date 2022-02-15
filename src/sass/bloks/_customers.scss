@@ -1,23 +1,21 @@
 .customers
 {
     position: relative;
-    height: 524px;
+    height: 100%;
+    padding-bottom: 200px;
     &__wrapper
     {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
     &__card
     {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
     .customers-name
     {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         & img

@@ -1,4 +1,4 @@
-@media (max-width: 1025px)
+@media (max-width: 1100px)
 {
     .container
     {
@@ -6,34 +6,20 @@
     }
     .title
     {
-        h2
-        {
-            font-size: 32px;
-        }
         &--customers
         {
             width: 300px;
         }
-    }
-    .promo
-    {
-        background-position: right;
-    }
-    .about-us
-    {
-        picture
+        h2
         {
-            img
-            {
-                width: 100%;
-            }
+            font-size: 32px;
         }
-    }
-    .sentence
-    {
-        &__card
+        &--overfooter
         {
-            width: 280px;
+            h2
+            {
+                font-size: 24px;
+            }
         }
     }
     .card
@@ -58,6 +44,37 @@
             {
             font-size: 80px;
             }
+        }
+    }
+}
+@media (max-width: 1025px)
+{
+    .title
+    {
+        &--customers
+        {
+            width: 300px;
+        }
+    }
+    .promo
+    {
+        background-position: right;
+    }
+    .about-us
+    {
+        picture
+        {
+            img
+            {
+                width: 100%;
+            }
+        }
+    }
+    .sentence
+    {
+        &__card
+        {
+            width: 280px;
         }
     }
     .overfooter
@@ -347,6 +364,11 @@
     .overfooter
     {
         width: 90%;
+        padding: 35px 50px;
+        .title
+        {
+            margin-right: 20px;
+        }
     }
     .footer
     {
@@ -589,6 +611,10 @@
 
 @media (max-width: 426px)
 {
+    .header-mb
+    {
+        top: 20%;
+    }
     .title
     {
         font-size: 20px;
@@ -628,6 +654,7 @@
     }
     .promo
     {
+        padding-top: 15px;
         background-position: 80%;
         &__title
         {
@@ -639,6 +666,7 @@
         &__wrapper
         {
             height: initial;
+            top: -40px;
         }
     }
     .sentence
