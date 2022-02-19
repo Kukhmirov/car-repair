@@ -10,132 +10,66 @@
 <body>
 
     <header class="header">
-        <div class="container">
-       
-            <div class="nav">
-                <nav class="navbar">
-                    <ul>
+        <div class="container container--header">
+            <div class="header__menu menu">
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
                         <li>
-                            <a href="#">Services</a>
-                            <div class="icon">
+                            <a class="menu__link">Services</a>
+                            <div class="menu__arrow">
                                 <img src="./assets/icon/arrow_down.svg" alt="arrow down">
                             </div>
-                            <ul class="mb-submenu">
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
+                            <ul class="menu__sub-list">
+                                <li><a class="menu__link" href="">Category</a></li>
+                                <li><a class="menu__link" href="">Category</a></li>
+                                <li><a class="menu__link" href="">Category</a></li>
+                                <li><a class="menu__link" href="">Category</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Specials</a>
+                            <a href="#" class="menu__link">Specials</a>
                         </li>
                         <li>
-                            <a href="#">Estimates</a>
+                            <a href="#" class="menu__link">Estimates</a>
                         </li>
                         <li>
-                            <a href="#">Reviews</a>
+                            <a href="#" class="menu__link">Reviews</a>
                         </li>
                         <li>
-                            <a href="#">Shop</a>
-                            <div class="icon">
+                            <a class="menu__link">Shop</a>
+                            <div class="menu__arrow">
                                 <img src="./assets/icon/arrow_down.svg" alt="arrow down">
                             </div>
-                            <ul class="mb-submenu">
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
+                            <ul class="menu__sub-list">
+                                <li><a class="menu__link" href="">Category</a></li>
+                                <li><a class="menu__link" href="">Category</a></li>
+                                <li><a class="menu__link" href="">Category</a></li>
+                                <li><a class="menu__link" href="">Category</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="#" class="menu__link">About</a>
                         </li>
-                    </ul>
+                </ul>
                 </nav>
-                 <div class="menu-item">
-                    <div class="search">
-                        <a href="#"> <img src="./assets/icon/search_24px.svg" alt="search"></a>
-                    </div>
-                    <div class="basket">
-                        <a href="#">
-                            <img src="./assets/icon/shopping_cart_24px.svg" alt="trash">
-                            <span>2</span>
-                        </a>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </header>
-
-    <header class="header-mb">
-        <div class="container">
-            <div class="nav-mb">
-                <input type="checkbox" id="menu-bar">
-                <label for="menu-bar">
-                    <div class="hamburger-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </label>
-                <nav class="navbar-mb">
-                    <ul>
-                        <li>
-                            <div class="href-name">
-                                <a href="#">Services</a>
-                                <div class="icon">
-                                    <img src="./assets/icon/arrow_down.svg" alt="arrow down">
-                                </div>
-                            </div>
-                            <ul class="mb-submenu">
-                                <li><a href="#">Category</a></li>
-                                <li><a href="#">Category</a></li>
-                                <li><a href="#">Category</a></li>
-                                <li><a href="#">Category</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Specials</a>
-                        </li>
-                        <li>
-                            <a href="#">Estimates</a>
-                        </li>
-                        <li>
-                            <a href="#">Reviews</a>
-                        </li>
-                        <li>
-                            <div class="href-name">
-                                <a href="#">Shop</a>
-                                <div class="icon">
-                                    <img src="./assets/icon/arrow_down.svg" alt="arrow down">
-                                </div>
-                            </div>
-                            <ul class="mb-submenu">
-                                <li><a href="#">Category</a></li>
-                                <li><a href="#">Category</a></li>
-                                <li><a href="#">Category</a></li>
-                                <li><a href="#">Category</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                    </ul>
-                </nav>
-                 <div class="menu-item">
-                    <div class="search">
-                        <a href="#"> <img src="./assets/icon/search_24px.svg" alt="search"></a>
-                    </div>
-                    <div class="basket">
-                        <a href="#">
-                            <img src="./assets/icon/shopping_cart_24px.svg" alt="trash">
-                            <span>2</span>
-                        </a>
-                    </div>
-                </div> 
             </div>
 
+            <div class="menu-item">
+                <div class="search">
+                    <a href="#"> <img src="./assets/icon/search_24px.svg" alt="search"></a>
+                </div>
+                <div class="basket">
+                    <a href="#">
+                        <img src="./assets/icon/shopping_cart_24px.svg" alt="trash">
+                        <span>2</span>
+                    </a>
+                </div>
+            </div> 
         </div>
     </header>
 
@@ -538,6 +472,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section class="overfooter">
@@ -549,7 +484,7 @@
             <p>Make an Appointment<img src="./assets/icon/arrow_forward_24px.svg" alt="arow"></p>
         </button>
     </section>
-
+    
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -593,21 +528,29 @@
                      </div>
                      <div class="footer__items">
                          <div class="contact-info">
-                             <a href="#"><img src="./assets/icon/footer-posicion/place_24px.svg" alt="icon posicion"></a>
-                             <span>321 Pikes Place Parkway
+                             <a href="#" class="contact-info__link">
+                                 <div class="icon"><img src="./assets/icon/footer-posicion/place_24px.svg" alt="icon posicion"> </div>
+                                 <span>321 Pikes Place Parkway
                                 Seattle, WA 54321</span>
+                            </a>
                          </div>
                          <div class="contact-info">
-                             <a href="tel:+75557654321"><img src="./assets/icon/footer-posicion//smartphone_24px.svg" alt="icon posicion"></a>
-                            <span>(555) 765-4321</ы>
+                             <a href="tel:+75557654321" class="contact-info__link">
+                                 <div class="icon"><img src="./assets/icon/footer-posicion//smartphone_24px.svg" alt="icon posicion"></div>
+                                 <span>(555) 765-4321</span>
+                            </a>
                          </div>
                          <div class="contact-info">
-                             <a href="mailto:Info@company.com"><img src="./assets/icon/footer-posicion/email_24px.svg" alt="icon posicion"></a>
-                            <span>Info@company.com</span>
+                             <a href="mailto:Info@company.com" class="contact-info__link">
+                                <div class="icon"><img src="./assets/icon/footer-posicion/email_24px.svg" alt="icon posicion"></div> 
+                                <span>Info@company.com</span>
+                            </a>
                          </div>
                          <div class="contact-info">
-                             <a href="#"><img src="./assets/icon/footer-posicion/timer_24px.svg" alt="icon posicion"></a>
-                            <span>Mon - Sat:  7:000 am - 6:00 pm</span>
+                             <div class="contact-info__link">
+                                 <div class="icon"><img src="./assets/icon/footer-posicion/timer_24px.svg" alt="icon posicion"></div>
+                                 <span>Mon - Sat:  7:000 am - 6:00 pm</span>
+                            </div>
                          </div>
                      </div>
                  </div>

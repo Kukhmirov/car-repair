@@ -3,6 +3,7 @@ import counter from "./modules/counter";
 import albom from "./modules/albom";
 import form from "./modules/form";
 import header from "./modules/header";
+import overfooter from './modules/overfooter';
 
 window.addEventListener("DOMContentLoaded", () => {
     "use strict";
@@ -12,4 +13,5 @@ window.addEventListener("DOMContentLoaded", () => {
     albom('.tabheader-item', '.foto', '.tabheader-items');
     form();
     header();
+    overfooter();
 });

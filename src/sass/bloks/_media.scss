@@ -88,14 +88,14 @@
     .container
     {
         width: 90%;
+        &--header
+        {
+            padding: 0 5px;
+        }
     }
-    .header-mb
+    .promo
     {
-        display: flex;
-    }
-    .header
-    {
-        display: none;
+        padding-top: 70px;
     }
     .service
     {
@@ -656,9 +656,14 @@
     {
         padding-top: 15px;
         background-position: 80%;
+        &__row
+        {
+            margin-top: 50px;
+        }
         &__title
         {
             font-size: 30px;
+            margin-top: 50px;
         }
     }
     .about-us

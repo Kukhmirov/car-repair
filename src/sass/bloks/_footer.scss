@@ -1,7 +1,6 @@
 .footer
 {
-    height: 400px;
-    padding-top: 15px;
+    padding: 75px 0 100px 0;
     &__wrapper
     {
         display: flex;
@@ -89,22 +88,27 @@
         .contact-info
         {
             display: flex;
-            a
+            &__link
             {
-                margin-right: 18px;
-                padding-top: 3px;
-                img
+                display: flex;
+                text-decoration: none;
+                .icon
                 {
-                    width: 16px;
+                    margin-right: 18px;
+                    img
+                    {
+                        width: 16px;
+                    }
                 }
-            }
-            span
-            {
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: 0.15px;
-                color: #4B4B4B;
+                span
+                {
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.15px;
+                    color: #4B4B4B;
+                    list-style: none;
+                }
             }
         }
     }
