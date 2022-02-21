@@ -317,7 +317,7 @@
             margin-top: 30px;
             .forms
             {
-                .form-row
+                &__row
                 {
                     input
                     {
@@ -517,7 +517,7 @@
             width: 100%;
             .forms
             {
-                .form-row
+                &__row
                 {
                     flex-direction: column;
                     input
@@ -541,6 +541,10 @@
     .albom
     {
         height: 720px;
+        &::before
+        {
+            background-size: 100%;
+        }
         picture
         {
             img
