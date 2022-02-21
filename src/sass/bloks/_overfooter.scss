@@ -1,10 +1,21 @@
-
+.over-test
+{
+    width: 100%;
+    // position: absolute;
+    // bottom: 6.25%;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .overfooter
 {
     padding: 40px 70px;
     width: 1020px;
     margin: 5px auto;
     position: relative;
+    // top: -75px;
+    // bottom: 75px;
     background: #fff;
     display: flex;
     justify-content: space-around;

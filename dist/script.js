@@ -351,14 +351,14 @@ function header() {
   const menuToggle = document.querySelector('.hamburger-menu');
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('hamburger-menu--active');
-    document.querySelector('.menu__body').classList.toggle('menu__body--active');
+    document.querySelector('.header__body').classList.toggle('header__body--active');
     document.body.classList.toggle('lock');
-    const menuLink = document.querySelectorAll('.menu__link');
+    const menuLink = document.querySelectorAll('.header__link');
     menuLink.forEach(item => {
       item.addEventListener('click', () => {
         if (item.getAttribute('href')) {
           console.log(1);
-          document.querySelector('.menu__body').classList.remove('menu__body--active');
+          document.querySelector('.header__body').classList.remove('header__body--active');
           menuToggle.classList.remove('hamburger-menu--active');
           document.body.classList.remove('lock');
         }
@@ -412,20 +412,17 @@ function modal() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function overfooter() {
-  const overfooter = document.querySelector('.overfooter');
-  let height = overfooter.offsetHeight;
-  const standartHeight = 140;
-  let newTop = (height + 10) / 2;
-
-  if (height == standartHeight) {
-    overfooter.style.top = -newTop + 'px';
-    console.log(height);
-  } else if (height > standartHeight) {
-    overfooter.style.top = -newTop + 'px';
-  } else if (height < standartHeight) {
-    overfooter.style.top = -75 + "px";
-  }
+function overfooter() {// const overfooter = document.querySelector('.overfooter');
+  // let height = overfooter.offsetHeight;
+  // const standartHeight = 140;
+  // let newTop = (height + 10) / 2;
+  // if (height == standartHeight){
+  //     overfooter.style.top = -newTop+'px';
+  // } else if (height > standartHeight){
+  //     overfooter.style.top = -newTop+'px';
+  // } else if ( height < standartHeight){
+  //     overfooter.style.top = -75+ "px";
+  // }
 }
 
 ;

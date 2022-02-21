@@ -62,15 +62,15 @@ function header (){
 
     menuToggle.addEventListener('click', () => {
         menuToggle.classList.toggle('hamburger-menu--active');
-        document.querySelector('.menu__body').classList.toggle('menu__body--active');
+        document.querySelector('.header__body').classList.toggle('header__body--active');
         document.body.classList.toggle('lock');
 
-        const menuLink = document.querySelectorAll('.menu__link');
+        const menuLink = document.querySelectorAll('.header__link');
         menuLink.forEach(item => {
             item.addEventListener('click', () => {
                 if (item.getAttribute('href')){
                     console.log(1);
-                    document.querySelector('.menu__body').classList.remove('menu__body--active');
+                    document.querySelector('.header__body').classList.remove('header__body--active');
                     menuToggle.classList.remove('hamburger-menu--active');
                     document.body.classList.remove('lock');
                 }

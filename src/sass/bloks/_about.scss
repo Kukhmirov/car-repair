@@ -13,13 +13,8 @@
         padding: 100px 80px 0 80px;
         background: #fff;
         z-index: 1;
-        .back-gears
-        {
-            z-index: 0;
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 640px;
-        }
+        background-image: url(../../assets/image/back/Gears.png);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
     }
 }
